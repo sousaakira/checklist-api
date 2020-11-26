@@ -18,15 +18,13 @@ REQUISITOS
 
 INSTALAÇÃO
 
-​	Baixar o código fonte em seguida entra na pasta do projeto e rodar o comando
-
-​	Entre na pasta e rode o comando
+​	Baixar o código fonte em seguida entre na pasta e rode os comandos
 
 ```shell
 npm i
 ```
 
-Consiura o aquivo **config/connDB.js**
+Configura o arquivo **config/connDB.js**
 
 ```javascript
 module.exports = {
