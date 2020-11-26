@@ -1,0 +1,64 @@
+CHECKLIST API
+
+Back end rest feito usando node.js, express e sequelize
+
+REQUISITOS
+
+- Node.Js 10.10.0 ou superior
+
+- Mysql / MariaDB 
+
+- NPM  6.4.1 ou superior
+
+- yarn 1.22.4 ou superior
+
+  
+
+
+
+INSTALAÇÃO
+
+​	Baixar o código fonte em seguida entra na pasta do projeto e rodar o comando
+
+​	Entre na pasta e rode o comando
+
+```shell
+npm i
+```
+
+Consiura o aquivo **config/connDB.js**
+
+```javascript
+module.exports = {
+    dialect: 'mysql',
+    host: '127.0.0.1',
+    username: 'root',
+    password: '',
+    database: 'todo',
+    define: {
+        timestamps: true,
+        underscored: true
+    },
+};
+```
+
+Configure o mesmo de a cordo com suas credenciais de banco de dados
+
+Crie o banco de dados
+
+```shell
+yarn sequelize db:create 
+```
+
+Execute as migrations
+
+```shell
+yarn sequelize db:migrate
+```
+
+e por fim coloque a api para rodar
+
+```shell
+node /app/server.js
+```
+
